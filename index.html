@@ -245,6 +245,20 @@ Students will complete directed research in their area of interest and career as
 </div>
 </div>
 
+<div class="content courses" id="y4">
+    <h5>Elective Courses: Systems</h5>
+
+<div id="courses-s4">
+</div>
+</div>
+
+<div class="content courses" id="y5">
+    <h5>Elective Courses: Analytics</h5>
+
+<div id="courses-s5">
+</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -351,8 +365,144 @@ Students will complete directed research in their area of interest and career as
         },
 		
     ]
+    let s4Courses = [
+        {
+            title: "DS 5110 - Big Data Systems",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "CS 6750 - Database Systems",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "CS 6444 - Parallel Computing",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "CS 6111 - Cloud Computing",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "SYS 6023 - Cognitive Systems Engineering",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "SYS 6050 - Risk Analysis",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "SYS 6582 - Selected Topics in Systems Engineering",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "SYS 7001 - System and Decision Sciences",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },		
+    ]
+    let s5Courses = [
+        {
+            title: "DS 5001: Exploratory Text Analytics",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "CS 6160: Theory of Computation",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
 
-
+        {
+            title: "CS 6316: Machine Learning",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "CS 6501: Special Topics in Computer Science",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "CS 6666: Data Mining - Principles and Algorithm",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "CS 8501: Special Topics in Computer Science  Advanced Natural Language Processing",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 5170: Applied Time Series",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 5330: Data Mining",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 5630: Statistical Machine Learning",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 6021: Linear Models for Data Science",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 6120: Linear Models",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 6250: Longitudinal Data Analysis",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+        {
+            title: "STAT 6260: Categorical Data Analysis",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },
+        {
+            title: "SYS 6003: Optimization Models and Methods I",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p></p></div>
+            `
+        },	
+    ]
+	
 
 
     function getHtml(course, contentId) {
