@@ -259,6 +259,13 @@ Students will complete directed research in their area of interest and career as
 </div>
 </div>
 
+<div class="content courses" id="y6">
+    <h5>Other Departments</h5>
+
+<div id="courses-s6">
+</div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -497,7 +504,94 @@ Students will complete directed research in their area of interest and career as
         },	
     ]
 	
-
+    let s6Courses = [
+        {
+            title: "ECE 6501: Convex Optimization for Engineering and Data Science",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>This course will primarily serve to introduce students to the key concepts in convex optimization theory with the goal of enabling them to formulate and solve various convex optimization problems arising in engineering, data science, and machine learning.</p></div>
+            `
+        },	
+        {
+            title: "ECE 6501 (Special Topics) Matrix Analysis in Engineering and Science",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>A first-level graduate course covering a topic not normally covered in the graduate course offerings. The topic will usually reflect new developments in the electrical and computer engineering field.</p></div>
+            `
+        },	
+        {
+            title: "ECE 6502 (Special Topics) Statistical Learning and Graphical Models",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>	The course is focused on the foundations of estimation theory, statistical learning, probabilistic graphical models, and relevant computational algorithms.</p></div>
+            `
+        },	
+        {
+            title: "ECE 6502 (Special Topics) Tensors for Data Science and Machine Learning",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Covers the basic theory, algorithms, and applications of tensor decomposition in data science and machine learning. Matrix and tensor rank, multilinear rank, low-rank (canonical polyadic) and Tucker decomposition, identifiability, algorithms, performance bounds, sparse computations, parallelization, and applications from topic and graph mining, to mixture modeling, recommender systems, and speech / audio / language modeling and understanding.</p></div>
+            `
+        },	
+        {
+            title: "ECE 6711 Probability and Stochastic Processes",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Topics include probability spaces (samples spaces, event spaces, probability measures); random variables and vectors (distribution functions, expectation, generating functions); and random sequences and processes; especially specification and classification. Includes detailed discussion of second-order stationary processes and Markov processes; inequalities, convergence, laws of large numbers, central limit theorem, ergodic, theorems; and MS estimation, Linear MS estimation, and the Orthogonality Principle.</p></div>
+            `
+        },	
+        {
+            title: "ECON 8720: Time Series Econometrics",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Studies econometric techniques for the analysis of economic time series. </p></div>
+            `
+        },	
+        {
+            title: "ECON 7720: Econometrics II",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Development of the linear and non-linear regression models including hypothesis testing, specification, instrumental variables, generalized least squares, and asymtotic distribution theory. Includes an introduction to identification and estimation of simultaneous equation models.</p></div>
+            `
+        },	
+        {
+            title: "EVSC 7070: Advanced Use of Geographical Information Systems",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Geographical data is increasingly important i n understanding our society and our environment. This course will focus on teaching stiudents advanced principles and operation of GIS software. It's a im is to develop students who are prepared to apply GIS to a variety of research problems by expoing them to tools and techniques that go beyond those covered in a basic course on GIS.</p></div>
+            `
+        },	
+        {
+            title: "GCOM 7240: Advanced Quantitative Analysis",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Multivariate statistics training to analyze Big Data sets. The course covers discrete choice modeling (logistic and probit models), classification techniques (discriminant and cluster analyses), data reduction techniques (factor analysis), and advanced predictive techniques (regression models with interactions and curvilinear effects, structural equation modeling, and factorial ANOVA). Trains students on IBM-SPSS, SAS, and R.</p></div>
+            `
+        },	
+        {
+            title: "PHS 5705: Recent Advances in Public Health Genomics",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>The course will cover human genetics and genomics, including the human/mammalian genome variation, determination of genomic variation on phenotype and disease risk, mapping and characterizing genetic variants on phenotype, determining the putative impact of genetic variants on gene expression (transcriptomics, epigenomics), the promise and implications of genome science on precision medicine and the ethical, legal & social implications.</p></div>
+            `
+        },	
+		
+        {
+            title: "PHS 7310: Clinical Trials Methodology",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Covers the design and analysis of Phase I-III clinical trials. Topics include choice of study population and endpoints, choice of study design and sample size estimation, randomization and masking, patient recruitment, data collection and quality control, data monitoring committees, data analysis, and the interpretation and reporting of results.</p></div>
+            `
+        },	
+		
+        {
+            title: "PSYC 5720: Fundamentals of Item Response Theory",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>This course is designed to introduce you to the concepts of item response theory (IRT) models and their application to substantive psychological problems in measurement, such as test and scale design and analysis.</p></div>
+            `
+        },	
+        {
+            title: "PSYC 7760: Introduction to Applied Multivariate Methods",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>Introduces major statistical methods used for the data analysis of multiple measures. Includes elementary matrix algebra, multivariate regression (canonical correlation; multivariate analysis of variance and covariance; and discriminant analysis and classification), correlational methods (principal components and exploratory and confirmatory factor analysis), and the analysis of multivariate contingency tables using log-linear models. Emphasizes concepts, issues, and examples over mathematical derivations.</p></div>
+            `
+        },	
+        {
+            title: "SARC 5400: Data Visualization",
+            content: `
+            <div aria-labelledby="panel-0-1-label" class="accordion-content" data-tab-content="" id="panel-0-1" role="region" aria-hidden="false" style="display: block;"><p>This is a course about information and data visualization. We live in a world rich with information. This course teaches visual and spatial thinking coupled with data analysis tools and custom web-enabled programming to construct and envision information.</p></div>
+            `
+        },	
+	]
 
     function getHtml(course, contentId) {
         return `
@@ -541,6 +635,10 @@ Students will complete directed research in their area of interest and career as
         s5Courses.forEach((course, index) => {
             let contentId = "course-s5-" + index;
             $("#courses-s5").append(getHtml(course, contentId));
+        });
+        s6Courses.forEach((course, index) => {
+            let contentId = "course-s6-" + index;
+            $("#courses-s6").append(getHtml(course, contentId));
         });
     });
 </script>
